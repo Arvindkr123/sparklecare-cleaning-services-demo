@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #f2f5fb;
+  --color-navy-100: #e3e9f5;
+  --color-navy-200: #c3cfe6;
+  --color-navy-300: #94a6cc;
+  --color-navy-400: #6079a8;
+  --color-navy-500: #3e5687;
+  --color-navy-600: #2c426f;
+  --color-navy-700: #1f3259;
+  --color-navy-800: #142446;
+  --color-navy-900: #0c1a36;
+  --color-navy-950: #071126;
+
+  --color-teal-50: #ecfdfb;
+  --color-teal-100: #cdf9f3;
+  --color-teal-200: #9df1e7;
+  --color-teal-300: #5fe2d5;
+  --color-teal-400: #27cbbd;
+  --color-teal-500: #10afa3;
+  --color-teal-600: #0a8c85;
+  --color-teal-700: #0d706c;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: var(--color-teal-200);
+  color: var(--color-navy-950);
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.prose-legal h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-navy-900);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose-legal p,
+.prose-legal li {
+  color: var(--color-navy-600);
+  line-height: 1.8;
+}
+.prose-legal ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+.prose-legal p + p {
+  margin-top: 0.75rem;
+}
