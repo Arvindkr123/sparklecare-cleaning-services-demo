@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo light />
             <p className="mt-5 max-w-sm leading-relaxed text-navy-300">
-              {site.tagline} Reliable home and office cleaning delivered by trained, friendly professionals.
+              {site.tagline} Contact us for home and office cleaning in Bareilly.
             </p>
             <div className="mt-6 flex gap-3">
               {[
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
             </ul>
             <p className="mt-5 text-xs text-navy-400">
-              * Phone, WhatsApp, email and address shown are placeholders.
+              * The email and social links are demo placeholders; update them before launch.
             </p>
           </div>
         </div>

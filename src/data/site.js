@@ -1,43 +1,36 @@
 /**
  * ─────────────────────────────────────────────────────────────
- *  SparkleCare — central business configuration
+ *  Sagar Deep Cleaning Service — central business configuration
  * ─────────────────────────────────────────────────────────────
- *  ⚠️  PLACEHOLDER DATA: every value marked `PLACEHOLDER` below
+ *  ⚠️  DEMO DATA: values marked `PLACEHOLDER` below
  *  must be replaced with real business details before launch.
- *  The 555-01xx phone range is reserved for fictional use and the
- *  `.example` domain is reserved for documentation, so nothing
- *  here will reach a real person by accident.
+ *  The `.example` domain is reserved for documentation.
  * ─────────────────────────────────────────────────────────────
  */
 
 export const site = {
-  name: "SparkleCare",
-  tagline: "Professional Cleaning. Exceptional Care.",
+  name: "Sagar Deep Cleaning Service",
+  tagline: "Trusted cleaning for homes and businesses in Bareilly.",
   description:
-    "SparkleCare provides professional home and office cleaning services — house, deep, office, sofa, carpet, bathroom, kitchen and move-in/move-out cleaning. Get a free, no-obligation quote today.",
+    "Sagar Deep Cleaning Service offers home and office cleaning in Bareilly, Uttar Pradesh. Contact us for a quote for deep cleaning and other cleaning services.",
   // PLACEHOLDER — set to your production domain
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sparklecare.example",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sagardeepcleaning.example",
 
   contact: {
-    // PLACEHOLDER phone number (fictional 555 range)
-    phoneDisplay: "+1 (555) 010-2030",
-    phoneHref: "+15550102030",
-    // PLACEHOLDER WhatsApp number — digits only, with country code, no "+"
-    whatsapp: "15550102030",
+    phoneDisplay: "+91 72178 99735",
+    phoneHref: "+917217899735",
+    whatsapp: "917217899735",
     // PLACEHOLDER email address
-    email: "hello@sparklecare.example",
-    // PLACEHOLDER address
+    email: "hello@sagardeepcleaning.example",
     address: {
-      street: "100 Placeholder Avenue, Suite 1",
-      city: "Your City",
-      region: "Your State",
-      postalCode: "00000",
-      country: "US",
+      street: "Civil Lines",
+      city: "Bareilly",
+      region: "Uttar Pradesh",
+      postalCode: "243001",
+      country: "IN",
     },
     hours: [
-      { days: "Monday – Friday", time: "8:00 AM – 7:00 PM" },
-      { days: "Saturday", time: "9:00 AM – 5:00 PM" },
-      { days: "Sunday", time: "By appointment" },
+      { days: "Booking availability", time: "Call or WhatsApp to confirm" },
     ],
   },
 
@@ -57,7 +50,7 @@ export const fullAddress = () => {
 export const mapsUrl = () =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress())}`;
 
-export const whatsappUrl = (message = "Hi SparkleCare! I'd like to ask about your cleaning services.") =>
+export const whatsappUrl = (message = "Namaste! I'd like to ask Sagar Deep Cleaning Service about cleaning services in Bareilly.") =>
   `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(message)}`;
 
 export const telUrl = () => `tel:${site.contact.phoneHref}`;
@@ -90,29 +83,9 @@ export const images = {
 
 export const serviceAreas = [
   {
-    country: "United States",
-    code: "US",
-    cities: ["New York", "Los Angeles", "Chicago", "Houston", "Dallas", "Miami"],
-  },
-  {
-    country: "United Kingdom",
-    code: "UK",
-    cities: ["London", "Manchester", "Birmingham", "Leeds", "Glasgow", "Bristol"],
-  },
-  {
-    country: "Australia",
-    code: "AU",
-    cities: ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide", "Gold Coast"],
-  },
-  {
-    country: "United Arab Emirates",
-    code: "AE",
-    cities: ["Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Al Ain", "Ras Al Khaimah"],
-  },
-  {
     country: "India",
     code: "IN",
-    cities: ["Mumbai", "Delhi NCR", "Bengaluru", "Hyderabad", "Chennai", "Pune"],
+    cities: ["Bareilly, Uttar Pradesh"],
   },
 ];
 
@@ -144,8 +117,8 @@ export const whyChooseUs = [
   },
   {
     icon: "heart",
-    title: "Satisfaction promise",
-    text: "If something isn't right, tell us within 24 hours and we'll come back to re-clean that area at no extra cost.",
+    title: "Customer feedback",
+    text: "Share your feedback with us after a clean so we can understand your experience.",
   },
 ];
 
@@ -164,7 +137,7 @@ export const howItWorks = [
   },
   {
     title: "Walk-through & feedback",
-    text: "Check the results. Not completely happy? We'll make it right within 24 hours.",
+    text: "Review the results and share any feedback with our team.",
   },
 ];
 
@@ -174,44 +147,44 @@ export const howItWorks = [
  */
 export const testimonials = [
   {
-    name: "Sarah M.",
-    location: "London, UK",
+    name: "Demo Customer 1",
+    location: "Bareilly, Uttar Pradesh",
     service: "Deep Cleaning",
     rating: 5,
     quote:
-      "The team was on time, friendly and incredibly thorough. Our kitchen hasn't looked this good since we moved in. Booking over WhatsApp was effortless.",
+      "A sample review for the deep cleaning service. Replace this with feedback from a real customer.",
   },
   {
-    name: "Arjun K.",
-    location: "Bengaluru, India",
+    name: "Demo Customer 2",
+    location: "Bareilly, Uttar Pradesh",
     service: "Sofa Cleaning",
     rating: 5,
     quote:
-      "Our fabric sofa had years of stains from the kids. It came out looking fresh and smelled clean without any harsh chemical smell. Great value.",
+      "A sample review for the sofa cleaning service. Replace this with feedback from a real customer.",
   },
   {
-    name: "Jessica T.",
-    location: "Sydney, Australia",
-    service: "Move-out Cleaning",
-    rating: 5,
-    quote:
-      "Needed an end-of-lease clean at short notice. They followed the checklist from our agent to the letter. Stress-free from start to finish.",
-  },
-  {
-    name: "Omar R.",
-    location: "Dubai, UAE",
+    name: "Demo Customer 3",
+    location: "Bareilly, Uttar Pradesh",
     service: "Office Cleaning",
     rating: 5,
     quote:
-      "We use SparkleCare for our office twice a week. Reliable, discreet and the team leaves everything spotless before we arrive in the morning.",
+      "A sample review for the office cleaning service. Replace this with feedback from a real customer.",
   },
   {
-    name: "Michael D.",
-    location: "Chicago, USA",
+    name: "Demo Customer 4",
+    location: "Bareilly, Uttar Pradesh",
+    service: "Office Cleaning",
+    rating: 5,
+    quote:
+      "A sample review for the office cleaning service. Replace this with feedback from a real customer.",
+  },
+  {
+    name: "Demo Customer 5",
+    location: "Bareilly, Uttar Pradesh",
     service: "House Cleaning",
     rating: 5,
     quote:
-      "Clear pricing, great communication and consistently excellent work. It's one less thing to worry about every other week.",
+      "A sample review for the house cleaning service. Replace this with feedback from a real customer.",
   },
 ];
 
@@ -237,8 +210,8 @@ export const faqs = [
     a: "We prioritise low-odour, eco-conscious products and follow manufacturer guidance on every surface. Let us know about pets, allergies or sensitive surfaces when booking.",
   },
   {
-    q: "What if I'm not happy with the clean?",
-    a: "Tell us within 24 hours and we'll return to re-clean the areas in question at no additional cost. Your satisfaction is the whole point.",
+    q: "How can I share feedback about a clean?",
+    a: "Call or message us after your service and let us know about your experience.",
   },
   {
     q: "Can I reschedule or cancel a booking?",
@@ -246,6 +219,6 @@ export const faqs = [
   },
   {
     q: "Which areas do you serve?",
-    a: "We're growing across selected cities in the USA, UK, Australia, UAE and India. Availability varies by location, so send us your area and we'll confirm right away.",
+    a: "Sagar Deep Cleaning Service is based in Civil Lines, Bareilly. Contact us with your neighbourhood to confirm service availability.",
   },
 ];

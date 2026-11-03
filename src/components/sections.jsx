@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { whyChooseUs, howItWorks, testimonials, serviceAreas, faqs as defaultFaqs, images, whatsappUrl, telUrl, px } from "@/data/site";
+import { whyChooseUs, howItWorks, testimonials, serviceAreas, faqs as defaultFaqs, images, whatsappUrl, telUrl, px, site } from "@/data/site";
 import { services } from "@/data/services";
 import Icon, { WhatsAppIcon } from "./Icon";
 import { Button, Container, SectionHeading, PlaceholderNote, Eyebrow } from "./ui";
@@ -74,15 +74,15 @@ export function WhyChooseUs() {
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <SectionHeading
-              eyebrow="Why choose SparkleCare"
+              eyebrow={`Why choose ${site.name}`}
               title="Care in every corner, trust in every visit"
               text="We're a young company built on a simple idea: do the job properly, communicate clearly and treat every space as if it were our own."
             />
             <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-3xl">
-              <Image src={images.aboutSecondary} alt="SparkleCare cleaner wiping a wooden table" fill sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
+              <Image src={images.aboutSecondary} alt="Cleaner wiping a wooden table" fill sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
               <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/95 p-4 backdrop-blur">
-                <p className="text-sm font-semibold text-navy-950">24-hour re-clean promise</p>
-                <p className="mt-1 text-sm text-navy-500">Not happy with an area? We&apos;ll come back and fix it.</p>
+                <p className="text-sm font-semibold text-navy-950">Cleaning care that fits your space</p>
+                <p className="mt-1 text-sm text-navy-500">Contact our team to discuss your cleaning needs.</p>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ export function BeforeAfterSection({ limit = 2 }) {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             eyebrow="Before & after"
-            title="See the SparkleCare difference"
+            title={`See the ${site.name} difference`}
             text="Drag the slider to compare. Every clean follows a detailed checklist so results are consistent, visit after visit."
           />
           <Button href="/gallery" variant="outline" className="shrink-0">
@@ -181,11 +181,11 @@ export function Testimonials() {
         <SectionHeading
           align="center"
           eyebrow="Testimonials"
-          title="What our customers say"
-          text="Real feedback from real homes and offices is what drives us to keep raising the bar."
+          title="Customer feedback"
+          text="Replace these demo samples with verified feedback from your customers before publishing."
         />
         <div className="mt-5 flex justify-center">
-          <PlaceholderNote>Placeholder testimonials for demonstration only — replace with genuine customer reviews.</PlaceholderNote>
+          <PlaceholderNote>These are sample reviews for this demo, not verified customer feedback.</PlaceholderNote>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.slice(0, 3).map((t, i) => (
@@ -229,9 +229,9 @@ export function ServiceAreas() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <SectionHeading
-              eyebrow="Service areas"
+              eyebrow="Bareilly service area"
               title="Where we clean"
-              text="We're expanding across selected cities in five countries. Don't see your area? Message us — we may already have a team nearby."
+              text="Based in Civil Lines, we serve Bareilly, Uttar Pradesh. Contact us with your neighbourhood to confirm availability."
             />
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/contact" variant="navy">Check availability</Button>
@@ -242,10 +242,10 @@ export function ServiceAreas() {
             {serviceAreas.map((a, i) => (
               <div
                 key={a.code}
-                className={`rounded-3xl border border-navy-100 p-6 ${i === 0 ? "sm:col-span-2 bg-gradient-to-br from-teal-50 to-white" : "bg-white"}`}
+                className={`rounded-3xl border border-navy-100 p-6 ${i === 0 ? "sm:col-span-2 bg-gradient-to-br from-amber-50 to-white" : "bg-white"}`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-navy-900 text-xs font-bold tracking-wider text-teal-300">{a.code}</span>
+                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-navy-900 text-xs font-bold tracking-wider text-amber-300">{a.code}</span>
                   <h3 className="text-lg font-semibold text-navy-950">{a.country}</h3>
                 </div>
                 <ul className="mt-4 flex flex-wrap gap-2">
@@ -274,7 +274,7 @@ export function FAQ({ items = defaultFaqs, title = "Frequently asked questions",
             <SectionHeading eyebrow={eyebrow} title={title} text="Can't find what you're looking for? We're happy to help." />
             {withCta && (
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button href={whatsappUrl("Hi SparkleCare, I have a question about your services.")} external variant="whatsapp">
+                <Button href={whatsappUrl("Namaste! I have a question for Sagar Deep Cleaning Service.")} external variant="whatsapp">
                   <WhatsAppIcon /> Ask on WhatsApp
                 </Button>
               </div>

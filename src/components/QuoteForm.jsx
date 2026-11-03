@@ -26,7 +26,7 @@ const propertyTypes = ["Apartment / Flat", "House / Villa", "Office", "Retail / 
 export default function QuoteForm({ defaultService = "", compact = false }) {
   const valid = services.some((s) => s.slug === defaultService) ? defaultService : "";
   const { values, field, validate, reset } = useForm(
-    { name: "", phone: "", email: "", service: valid, country: "", city: "", property: "", date: "", message: "" },
+    { name: "", phone: "", email: "", service: valid, country: "India", city: "", property: "", date: "", message: "" },
     schema
   );
   const [sent, setSent] = useState(null);
@@ -34,7 +34,7 @@ export default function QuoteForm({ defaultService = "", compact = false }) {
   const buildMessage = () => {
     const svc = services.find((s) => s.slug === values.service)?.name || values.service;
     return [
-      "New quote request — SparkleCare",
+      "New quote request — Sagar Deep Cleaning Service",
       "",
       `Name: ${values.name.trim()}`,
       `Phone: ${values.phone.trim()}`,
@@ -57,7 +57,7 @@ export default function QuoteForm({ defaultService = "", compact = false }) {
     if (channel === "whatsapp") {
       window.open(whatsappUrl(msg), "_blank", "noopener,noreferrer");
     } else {
-      window.location.href = mailUrl("Quote request — SparkleCare", msg);
+      window.location.href = mailUrl("Quote request — Sagar Deep Cleaning Service", msg);
     }
     setSent(channel);
   };
@@ -80,7 +80,7 @@ export default function QuoteForm({ defaultService = "", compact = false }) {
   return (
     <form noValidate onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2" aria-label="Get a free quote">
       <TextField label="Full name" required autoComplete="name" placeholder="Jane Smith" {...field("name")} />
-      <TextField label="Phone / WhatsApp" required type="tel" autoComplete="tel" placeholder="+1 555 010 2030" {...field("phone")} />
+      <TextField label="Phone / WhatsApp" required type="tel" autoComplete="tel" placeholder="+91 72178 99735" {...field("phone")} />
       <TextField label="Email" required type="email" autoComplete="email" placeholder="you@example.com" {...field("email")} className="sm:col-span-2" />
       <SelectField
         label="Service required"
@@ -91,7 +91,7 @@ export default function QuoteForm({ defaultService = "", compact = false }) {
         className="sm:col-span-2"
       />
       <SelectField label="Country" required placeholder="Select country" options={serviceAreas.map((a) => a.country).concat("Other")} {...field("country")} />
-      <TextField label="City / Area" required autoComplete="address-level2" placeholder="e.g. Dubai Marina" {...field("city")} />
+      <TextField label="City / Area" required autoComplete="address-level2" placeholder="e.g. Civil Lines, Bareilly" {...field("city")} />
       {!compact && (
         <>
           <SelectField label="Property type" placeholder="Select (optional)" options={propertyTypes} {...field("property")} />

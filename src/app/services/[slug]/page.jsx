@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
   if (!s) return {};
   return {
     title: `${s.name} Services`,
-    description: `${s.short} Book professional ${s.name.toLowerCase()} with ${site.name} — vetted cleaners, upfront quotes and a 24-hour re-clean promise.`,
+    description: `${s.short} Contact ${site.name} in Bareilly for a quote and booking availability.`,
     alternates: { canonical: `/services/${s.slug}` },
     openGraph: { title: `${s.name} | ${site.name}`, description: s.short, images: [{ url: s.image, alt: s.imageAlt }] },
   };
@@ -34,7 +34,7 @@ export default async function ServiceDetailPage({ params }) {
   if (!service) notFound();
 
   const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
-  const waMsg = `Hi SparkleCare! I'd like a quote for ${service.name}.`;
+  const waMsg = `Namaste! I'd like a quote for ${service.name} from Sagar Deep Cleaning Service.`;
 
   const schema = {
     "@context": "https://schema.org",

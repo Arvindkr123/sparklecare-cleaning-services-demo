@@ -21,9 +21,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About SparkleCare"
+        eyebrow="About Sagar Deep Cleaning Service"
         title="A cleaning company built on care, not shortcuts"
-        text="We started SparkleCare with a simple belief: professional cleaning should feel effortless for the customer and be done properly every single time."
+        text="Sagar Deep Cleaning Service is here to make it easier for homes and workplaces in Bareilly to get the cleaning care they need."
         image={images.team}
         crumbs={[{ label: "About Us" }]}
       />
@@ -32,7 +32,7 @@ export default function AboutPage() {
         <Container className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
-              <Image src={images.about} alt="Two SparkleCare cleaners preparing a bed in a bright room" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+              <Image src={images.about} alt="Two cleaners preparing a bed in a bright room" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-2 max-w-[16rem] rounded-2xl bg-navy-900 p-6 text-white shadow-xl sm:-right-8">
               <p className="font-display text-xl leading-snug">&ldquo;Do it properly, or don&apos;t do it at all.&rdquo;</p>
@@ -46,21 +46,20 @@ export default function AboutPage() {
             />
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-navy-500">
               <p>
-                SparkleCare is a young, growing cleaning business. We know that letting someone into your home or
-                workplace takes trust — so we&apos;ve built our service around earning it: careful hiring, thorough
-                training and clear communication from the first message to the final walk-through.
+                Based in Civil Lines, Bareilly, Sagar Deep Cleaning Service helps local households and businesses keep
+                their spaces clean and comfortable. We know that inviting a cleaning service into your space takes
+                trust, so we focus on clear communication and understanding your needs before each booking.
               </p>
               <p>
-                Whether it&apos;s a weekly clean of a family home, a one-off deep clean before guests arrive or an
-                end-of-tenancy clean on a tight deadline, our approach is the same: detailed checklists, the right
-                products for each surface and a team that takes pride in the result.
+                Whether you need a deep clean or help with another cleaning task, get in touch to discuss your space,
+                preferred timing and the service you have in mind.
               </p>
             </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               <CheckItem>Interviewed &amp; reference-checked team</CheckItem>
               <CheckItem>Room-by-room cleaning checklists</CheckItem>
               <CheckItem>Upfront, written quotes</CheckItem>
-              <CheckItem>24-hour re-clean promise</CheckItem>
+              <CheckItem>Direct communication about your service</CheckItem>
             </ul>
             <div className="mt-10 flex flex-wrap gap-3">
               <Button href="/quote" variant="navy" size="lg">Get a Free Quote</Button>

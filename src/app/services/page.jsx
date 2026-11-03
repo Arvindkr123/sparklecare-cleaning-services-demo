@@ -8,7 +8,7 @@ import { PageHero, HowItWorks, FAQ, FinalCTA } from "@/components/sections";
 export const metadata = {
   title: "Our Cleaning Services",
   description:
-    "Explore SparkleCare's cleaning services: house cleaning, deep cleaning, office cleaning, sofa, carpet, bathroom, kitchen and move-in/move-out cleaning.",
+    `Explore ${site.name}'s cleaning services in Bareilly: house cleaning, deep cleaning, office cleaning, sofa, carpet, bathroom, kitchen and move-in/move-out cleaning.`,
   alternates: { canonical: "/services" },
 };
 

@@ -37,7 +37,7 @@ export default function ContactForm() {
       .filter((x) => typeof x === "string")
       .join("\n");
     if (channel === "whatsapp") window.open(whatsappUrl(msg), "_blank", "noopener,noreferrer");
-    else window.location.href = mailUrl(`${values.topic} — SparkleCare website`, msg);
+    else window.location.href = mailUrl(`${values.topic} — Sagar Deep Cleaning Service website`, msg);
     setSent(channel);
   };
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form noValidate onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2" aria-label="Contact SparkleCare">
+    <form noValidate onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2" aria-label="Contact Sagar Deep Cleaning Service">
       <TextField label="Full name" required autoComplete="name" placeholder="Jane Smith" {...field("name")} />
       <TextField label="Email" required type="email" autoComplete="email" placeholder="you@example.com" {...field("email")} />
       <TextField label="Phone" type="tel" autoComplete="tel" placeholder="Optional" {...field("phone")} />

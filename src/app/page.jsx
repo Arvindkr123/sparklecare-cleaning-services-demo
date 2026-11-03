@@ -18,9 +18,8 @@ import {
 } from "@/components/sections";
 
 export const metadata = {
-  title: { absolute: `Professional Cleaning Services You Can Trust | ${site.name}` },
-  description:
-    "Trusted house, deep, office, sofa, carpet, bathroom, kitchen and move-in/move-out cleaning. Vetted cleaners, upfront quotes and a 24-hour re-clean promise. Get a free quote today.",
+  title: { absolute: `Cleaning Services in Bareilly | ${site.name}` },
+  description: site.description,
   alternates: { canonical: "/" },
 };
 
@@ -38,14 +37,14 @@ function Hero() {
         <div className="lg:col-span-6">
           <p className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50 px-3.5 py-1.5 text-xs font-semibold text-teal-700">
             <span className="h-1.5 w-1.5 rounded-full bg-teal-500" />
-            Home &amp; office cleaning · Now taking bookings
+            Home &amp; office cleaning · Bareilly, Uttar Pradesh
           </p>
           <h1 className="mt-6 font-display text-[2.6rem] leading-[1.02] tracking-tight text-navy-950 sm:text-6xl lg:text-[4.25rem]">
-            Professional Cleaning Services <span className="relative whitespace-nowrap text-teal-600">You Can Trust<svg className="absolute -bottom-2 left-0 h-3 w-full text-teal-300" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c40-6 120-8 196-3" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" /></svg></span>
+            Trusted Cleaning for <span className="relative whitespace-nowrap text-amber-600">Bareilly<svg className="absolute -bottom-2 left-0 h-3 w-full text-amber-300" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c40-6 120-8 196-3" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" /></svg></span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-navy-500">
-            Vetted, friendly cleaners who show up on time, follow a detailed checklist and leave your home or office
-            truly spotless. Clear quotes, flexible scheduling and a 24-hour re-clean promise.
+            Sagar Deep Cleaning Service helps make your home or workplace feel fresh and cared for. Tell us what you
+            need, and contact our Bareilly team for a clear quote and booking availability.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -78,7 +77,7 @@ function Hero() {
             <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-40px_rgba(7,17,38,0.55)]">
               <Image
                 src={images.hero}
-                alt="SparkleCare professional cleaner vacuuming a modern living room"
+                alt="Professional cleaner vacuuming a modern living room"
                 fill
                 priority
                 sizes="(min-width: 1024px) 45vw, 100vw"
@@ -87,7 +86,7 @@ function Hero() {
             </div>
             <div className="absolute -bottom-10 -left-4 hidden w-40 overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:block lg:-left-12 lg:w-48">
               <div className="relative aspect-[3/4]">
-                <Image src={images.heroAlt} alt="Smiling SparkleCare cleaner holding supplies" fill sizes="200px" className="object-cover" />
+                <Image src={images.heroAlt} alt="Smiling cleaner holding supplies" fill sizes="200px" className="object-cover" />
               </div>
             </div>
             <div className="absolute -right-2 top-6 rounded-2xl bg-white p-4 shadow-xl sm:-right-6">

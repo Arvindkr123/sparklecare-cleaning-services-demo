@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { images, px } from "@/data/site";
+import { images, px, site } from "@/data/site";
 import { Container, SectionHeading, PlaceholderNote } from "@/components/ui";
 import { PageHero, FinalCTA, beforeAfterItems } from "@/components/sections";
 import BeforeAfter from "@/components/BeforeAfter";
 
 export const metadata = {
   title: "Gallery",
-  description: "See SparkleCare's cleaning work — before and after comparisons and photos from homes and offices we've cleaned.",
+  description: `See ${site.name}'s cleaning work — before and after comparisons and photos from homes and offices.`,
   alternates: { canonical: "/gallery" },
 };
 

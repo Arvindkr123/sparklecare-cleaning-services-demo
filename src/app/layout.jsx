@@ -13,7 +13,7 @@ const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", dis
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Professional House & Office Cleaning Services`,
+    default: `${site.name} | Cleaning Services in Bareilly`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -25,9 +25,9 @@ export const metadata = {
     "office cleaning",
     "sofa cleaning",
     "carpet cleaning",
-    "move out cleaning",
-    "end of tenancy cleaning",
-    "cleaners near me",
+    "move-in cleaning",
+    "cleaning services in Bareilly",
+    "deep cleaning Bareilly",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -36,7 +36,7 @@ export const metadata = {
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
     url: site.url,
-    images: [{ url: images.hero, width: 1600, height: 1067, alt: "SparkleCare professional cleaner at work" }],
+    images: [{ url: images.hero, width: 1600, height: 1067, alt: "Sagar Deep Cleaning Service professional cleaner at work" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -63,6 +63,7 @@ const localBusiness = {
   image: images.hero,
   telephone: site.contact.phoneHref,
   email: site.contact.email,
+  currenciesAccepted: "INR",
   address: {
     "@type": "PostalAddress",
     streetAddress: site.contact.address.street,
@@ -80,15 +81,11 @@ const localBusiness = {
       itemOffered: { "@type": "Service", name: s.name, url: `${site.url}/services/${s.slug}` },
     })),
   },
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "19:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "17:00" },
-  ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${manrope.variable} ${fraunces.variable}`}>
+    <html lang="en-IN" className={`${manrope.variable} ${fraunces.variable}`}>
       <body className="bg-white pb-16 font-sans text-navy-900 antialiased md:pb-0">
         <a
           href="#main"

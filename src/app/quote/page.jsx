@@ -56,7 +56,7 @@ export default function QuotePage() {
                 <CheckItem>Clear scope of work</CheckItem>
                 <CheckItem>Upfront, written price</CheckItem>
                 <CheckItem>Estimated time on site</CheckItem>
-                <CheckItem>24-hour re-clean promise</CheckItem>
+                <CheckItem>Space to share your cleaning preferences</CheckItem>
               </ul>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#1fb857]">

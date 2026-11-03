@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact Us",
-  description: `Contact ${site.name} by phone, WhatsApp or email. Get answers about our cleaning services or request a free quote.`,
+  description: `Contact ${site.name} in Bareilly by phone, WhatsApp or email. Get answers about our cleaning services or request a quote.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact us"
         title="Let's make your space shine"
-        text="Questions, quotes or special requests — reach us however suits you best. We aim to respond within a few business hours."
+        text="For cleaning enquiries and booking availability in Bareilly, call or message our team."
         image={images.heroAlt}
         crumbs={[{ label: "Contact" }]}
       />
@@ -50,7 +50,7 @@ export default function ContactPage() {
         </Container>
         <Container>
           <PlaceholderNote className="mt-6">
-            Placeholder contact details — replace the phone number, WhatsApp number, email and address in <code>src/data/site.js</code>.
+            The email address is a demo placeholder. Phone and address details are set for this Bareilly demo.
           </PlaceholderNote>
         </Container>
       </section>
@@ -68,7 +68,7 @@ export default function ContactPage() {
           </div>
           <aside className="space-y-6 lg:col-span-5">
             <div className="rounded-[2rem] bg-navy-900 p-8 text-white">
-              <h2 className="font-display text-2xl">Opening hours</h2>
+              <h2 className="font-display text-2xl">Booking availability</h2>
               <ul className="mt-6 divide-y divide-white/10">
                 {site.contact.hours.map((h) => (
                   <li key={h.days} className="flex justify-between py-3 text-sm">
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-navy-400">Hours shown are placeholders — update to your actual schedule.</p>
+              <p className="mt-4 text-xs text-navy-400">Please call or WhatsApp to confirm current booking availability.</p>
             </div>
             <div className="rounded-[2rem] bg-gradient-to-br from-teal-50 to-white p-8 ring-1 ring-teal-100">
               <h2 className="font-display text-2xl text-navy-950">Need a price?</h2>

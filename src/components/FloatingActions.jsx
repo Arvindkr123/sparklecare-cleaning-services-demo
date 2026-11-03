@@ -10,7 +10,7 @@ export default function FloatingActions() {
         href={whatsappUrl()}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with SparkleCare on WhatsApp"
+        aria-label="Chat with Sagar Deep Cleaning Service on WhatsApp"
         className="group fixed bottom-6 right-6 z-40 hidden items-center gap-3 rounded-full bg-[#25D366] py-3 pl-3 pr-5 text-white shadow-[0_18px_40px_-12px_rgba(37,211,102,0.75)] transition hover:-translate-y-0.5 md:inline-flex"
       >
         <span className="relative grid h-9 w-9 place-items-center rounded-full bg-white/15">
